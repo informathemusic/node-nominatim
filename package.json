@@ -9,8 +9,7 @@
   },
   "main": "lib/nominatim",
   "dependencies": {
+    "informa-db.js": "^5.5.0",
     "node-fetch": "^2.6.1"
-  },
-  "devDependencies": {},
-  "optionalDependencies": {}
+  }
 }
