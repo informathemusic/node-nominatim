@@ -1,6 +1,6 @@
 {
   "author": "InforMatheMusic",
-  "name": "nominatim",
+  "name": "@informath/nominatim",
   "description": "Completely rewritten version of David Howell's Nominatim",
   "version": "1.0.0",
   "repository": {
