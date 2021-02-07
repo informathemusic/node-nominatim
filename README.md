@@ -18,7 +18,9 @@ const nominatim = require('@informath/nominatim');
 
 ## Installation
 
-    $ npm install nominatim
+```bash
+$ npm install nominatim
+```
 
 ## How to use?
 
