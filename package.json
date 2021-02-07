@@ -1,8 +1,8 @@
 {
-  "author": "David Howell <david@dynamicmethods.com.au>",
+  "author": "InforMatheMusic",
   "name": "nominatim",
-  "description": "A simple node module for handling nominatim searches",
-  "version": "0.1.0",
+  "description": "Completely rewritten version of David Howell's Nominatim",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/dynmeth/node-nominatim.git"
@@ -12,8 +12,7 @@
     "node": "~0.6.11"
   },
   "dependencies": {
-    "tqueue": "~0.1.0",
-    "request": "~2.9.200"
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {},
   "optionalDependencies": {}
