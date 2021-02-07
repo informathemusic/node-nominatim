@@ -2,14 +2,15 @@
   "author": "InforMatheMusic",
   "name": "@informath/nominatim",
   "description": "Completely rewritten version of David Howell's Nominatim",
-  "version": "5.1.0",
+  "version": "5.5.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/dynmeth/node-nominatim.git"
   },
   "main": "lib/nominatim",
   "dependencies": {
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.1",
+    "tqueue": "~0.1.0"
   },
   "devDependencies": {},
   "optionalDependencies": {}
