@@ -1,40 +1,33 @@
 ## Nominatim
 
+# DISCLAIMER
+
+This is a fully rewritten version, do not expect to be using that one just by replacing the original library with this one
+
 _nominatim_ is a basic node module to handle geocoding and reverse geocoding via [OpenStreetMap](http://openstreetmap.org/) (OSM). It attempts to adhere to the [Nominatim usage policy](http://wiki.openstreetmap.org/wiki/Nominatim_usage_policy).
 
 ## Example
 
-    var nominatim = require('nominatim');
+```js
+const nominatim = require('@informath/nominatim');
 
-	nominatim.search({ q: 'Adelaide, 5000, South Australia, Australia'}, function(err, opts, results) {
-	  console.log(results);
-	});
+
+```
 
 ## Installation
 
     $ npm install nominatim
 
-## License 
+## How to use?
 
-(The MIT License)
+`await Nominatim[operationToPerform](options, overwriteOptions)`
 
-Copyright (c) 2012 David Howell &lt;david@dynamicmethods.com.au&gt;
+`options` will be merged with `Nominatim.default` unless `overwriteOptions` is truthy
 
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-'Software'), to deal in the Software without restriction, including
-without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so, subject to
-the following conditions:
+## What are the possible endpoints?
 
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
+Any!
 
-THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
-CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
-TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+It will make a request at `https://nominatim.openstreetmap.org/[[Your operation here!]]`
+
+Learn more about proxy magic [here](https://medium.com/@alonronin/magic-methods-in-javascript-meet-proxy-65e6305f4d3e)! (Literally a google search I just made)
