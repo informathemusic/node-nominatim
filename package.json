@@ -10,7 +10,7 @@
   "main": "lib/nominatim",
   "dependencies": {
     "node-fetch": "^2.6.1",
-    "tqueue": "~0.1.0"
+    "tqueue": "^0.1.0"
   },
   "devDependencies": {},
   "optionalDependencies": {}
