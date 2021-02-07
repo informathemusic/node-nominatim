@@ -4,6 +4,8 @@
 
 This is a fully rewritten version, do not expect to be using that one just by replacing the original library with this one
 
+===
+
 _nominatim_ is a basic node module to handle geocoding and reverse geocoding via [OpenStreetMap](http://openstreetmap.org/) (OSM). It attempts to adhere to the [Nominatim usage policy](http://wiki.openstreetmap.org/wiki/Nominatim_usage_policy).
 
 ## Example
