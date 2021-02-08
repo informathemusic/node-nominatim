@@ -1,4 +1,5 @@
-var nominatim = require('..');
+const Nominatim = require('..');
+const Client = new Nominatim('Test for https://www.npmjs.com/package/@informath/nominatim <informathemusic@gmail.com>');
 
-nominatim.search({ q: 'Adelaide, 5000, South Australia, Australia'}, true)
+Client.search({ q: 'Adelaide, 5000, South Australia, Australia'})
   .then((v) => console.log(v));
