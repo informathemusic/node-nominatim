@@ -11,9 +11,14 @@ _nominatim_ is a basic node module to handle geocoding and reverse geocoding via
 ## Example
 
 ```js
-const nominatim = require('@informath/nominatim');
+const Nominatim = require('@informath/nominatim');
 
+const NominatimClient = new Nominatim('Nelson\'s Obvious tracking (NO tracking) <nelson.bighetti@hooli.xyz>');
 
+NominatimClient.search('5230, Newell Road, Palo Alto')
+  .then((v) => {
+    console.log(v);
+  });
 ```
 
 ## Installation
@@ -24,7 +29,7 @@ $ npm install @informath/nominatim
 
 ## How to use?
 
-`await Nominatim[operationToPerform](options, overwriteOptions)`
+`await NominatimClient[operationToPerform](options, overwriteOptions)`
 
 `options` will be merged with `Nominatim.default` unless `overwriteOptions` is truthy
 
